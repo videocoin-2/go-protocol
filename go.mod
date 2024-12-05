@@ -1,4 +1,4 @@
-module github.com/videocoin/go-protocol
+module github.com/videocoin-2/go-protocol
 
 go 1.15
 

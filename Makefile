@@ -3,11 +3,11 @@
 ABIGEN_DOCKER=docker run \
 	-v $(shell pwd)/contracts:/contracts \
 	-v $(shell pwd)/abi:/abi \
-	--rm -ti ethereum/solc:0.5.16
+	--rm -ti ethereum/solc:0.8.20
 BINGEN_DOCKER=docker run \
 	-v $(shell pwd)/contracts:/contracts \
 	-v $(shell pwd)/build:/build \
-	--rm -ti ethereum/solc:0.5.16
+	--rm -ti ethereum/solc:0.8.20
 CODEGEN_DOCKER=docker run \
 	--user $(shell id -u):$(shell id -g) \
 	-v $(shell pwd)/abi:/abi \
